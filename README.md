@@ -51,21 +51,6 @@ JC4827W543C_ebike/
 - ESP-IDF tools (gcc-xtensa, esptool)
 - Device drivers for USB-UART
 
-#### Build & Flash
-
-```bash
-# Set target
-idf.py set-target esp32s3
-
-# Build firmware
-idf.py build
-
-# Flash to device (replace COMx with your port)
-idf.py -p COMx flash monitor
-
-# Or use unified command
-idf.py -p COMx flash monitor
-```
 
 Key settings:
 - **Chip target:** ESP32-S3
@@ -121,21 +106,6 @@ JC4827W543C_ebike/
 - ESP-IDF инструменты (gcc-xtensa, esptool)
 - Драйверы USB-UART устройства
 
-#### Сборка и прошивка
-
-```bash
-# Установить целевой чип
-idf.py set-target esp32s3
-
-# Собрать прошивку
-idf.py build
-
-# Прошить устройство (замените COMx на ваш порт)
-idf.py -p COMx flash monitor
-
-# Или используйте объединенную команду
-idf.py -p COMx flash monitor
-```
 
 Ключевые настройки:
 - **Целевой чип:** ESP32-S3
@@ -156,18 +126,6 @@ AlexFire
 
 - [ESP-IDF Documentation](https://docs.espressif.com/projects/esp-idf/)
 - [LVGL Documentation](https://docs.lvgl.io/)
-- [JC4827W543C Board Info](https://www.jczn.tech/)
-    SRCS
-        "ui.c"
-        "ui_Screen1.c"
-        "ui_helpers.c"
-        "ui_comp_hook.c"
-    INCLUDE_DIRS "."
-    REQUIRES lvgl
-)
-```
-
-5. `idf.py build`
 
 ## Настройки SquareLine Studio
 
