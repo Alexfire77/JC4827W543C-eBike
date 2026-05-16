@@ -67,26 +67,12 @@ idf.py -p COMx flash monitor
 idf.py -p COMx flash monitor
 ```
 
-#### Using SquareLine Studio UI
-
-1. Design UI in SquareLine Studio
-2. Export → **Export UI Files** → select `components/ui/`
-3. Replace placeholder files in `components/ui/ui.c` and `components/ui/ui.h`
-4. Update `components/ui/CMakeLists.txt` with new source files
-5. Rebuild project
-
-### Configuration
-
-Edit `sdkconfig` for hardware settings:
-
-```bash
-idf.py menuconfig
-```
-
 Key settings:
 - **Chip target:** ESP32-S3
 - **Memory:** PSRAM enabled
 - **Color depth:** RGB565
+
+The main idea of ​​the project: to fit a well-known (and not my own) design of a speedometer for two-wheeled electric vehicles into the VScode + ESP-IDF project with a custom NV3041A driver
 
 ---
 
@@ -151,22 +137,6 @@ idf.py -p COMx flash monitor
 idf.py -p COMx flash monitor
 ```
 
-#### Использование SquareLine Studio
-
-1. Спроектируйте UI в SquareLine Studio
-2. Экспорт → **Export UI Files** → выберите `components/ui/`
-3. Замените файлы-заглушки в `components/ui/ui.c` и `components/ui/ui.h`
-4. Обновите `components/ui/CMakeLists.txt` новыми исходниками
-5. Пересоберите проект
-
-### Конфигурация
-
-Отредактируйте `sdkconfig` для настройки оборудования:
-
-```bash
-idf.py menuconfig
-```
-
 Ключевые настройки:
 - **Целевой чип:** ESP32-S3
 - **Память:** PSRAM включен
@@ -223,12 +193,5 @@ AlexFire
 | Touch SCL| 4    |
 | Touch RST| 38   |
 
-## Путь к LVGL
 
-
-При необходимости скорректировать путь в `CMakeLists.txt`:
-```cmake
-set(EXTRA_COMPONENT_DIRS
-    "path/to/lvgl"
-)
-```
+Основная идея проекта: впихнуть известный (и не моего авторства) дизайн спидометра для двухколесного электротранспорта в проект VScode + ESP-IDF с кастомным драйвером NV3041A
