@@ -1,0 +1,6 @@
+Как использовать для нового UI:
+
+Экспортировать проект из SquareLine Studio → Export UI Files
+Скопировать .c/.h файлы в ui, удалив заглушку
+Обновить SRCS в components/ui/CMakeLists.txt — перечислить все новые .c файлы
+idf.py build

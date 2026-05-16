@@ -1,0 +1,59 @@
+# ESP-IDF Build Files
+build/
+*.o
+*.a
+*.so
+*.exe
+*.dll
+
+# IDE & Editor
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ESP-IDF Configuration
+sdkconfig.old
+sdkconfig~
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+*.cmake
+
+# Build artifacts
+*.elf
+*.bin
+*.map
+*.esp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+debug_logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-specific
+.idf_monitor
+.idf_size
+dependencies.lock
