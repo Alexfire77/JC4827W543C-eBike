@@ -72,6 +72,8 @@ Key settings:
 - **Memory:** PSRAM enabled
 - **Color depth:** RGB565
 
+The main idea of ​​the project: to fit a well-known (and not my own) design of a speedometer for two-wheeled electric vehicles into the VScode + ESP-IDF project with a custom NV3041A driver
+
 ---
 
 ## Русский
@@ -191,3 +193,5 @@ AlexFire
 | Touch SCL| 4    |
 | Touch RST| 38   |
 
+
+Основная идея проекта: впихнуть известный (и не моего авторства) дизайн спидометра для двухколесного электротранспорта в проект VScode + ESP-IDF с кастомным драйвером NV3041A
